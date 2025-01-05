@@ -18,7 +18,7 @@ def clean_ingredients(dish_name, dish_ingredients):
     :return: tuple - containing (dish_name, ingredient set).
 
     This function should return a `tuple` with the name of the dish as the first item,
-    followed by the de-duped `set` of ingredients as the second item.
+    followed by the de-duplicated `set` of ingredients as the second item.
     """
 
     pass
