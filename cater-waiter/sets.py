@@ -11,7 +11,7 @@ from sets_categories_data import (VEGAN,
 
 
 def clean_ingredients(dish_name, dish_ingredients):
-    """Remove duplicates from `dish_ingredients`.
+    """Remove dupes from `dish_ingredients`.
 
     :param dish_name: str - containing the dish name.
     :param dish_ingredients: list - dish ingredients.
