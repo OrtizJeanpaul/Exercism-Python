@@ -60,7 +60,7 @@ def categorize_dish(dish_name, dish_ingredients):
         if dish_ingredients.issubset(category):
             return dish_name +': ' + name
     
-    return None
+    return ' '
     
 
 
