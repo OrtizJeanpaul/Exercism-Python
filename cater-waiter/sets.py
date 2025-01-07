@@ -88,7 +88,7 @@ def compile_ingredients(dishes):
     master_set = set()
 
     for _, dish in enumerate(dishes):
-        master_set | dish
+        master_set |= dish
     
     return master_set
     
