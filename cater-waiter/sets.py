@@ -85,7 +85,7 @@ def compile_ingredients(dishes):
 
     This function should return a `set` of all ingredients from all listed dishes.
     """
-    master_set = set(dishes[0])
+    master_set = set()
 
     for _, dish in enumerate(dishes):
         master_set | dish
