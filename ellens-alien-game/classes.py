@@ -39,7 +39,7 @@ class Alien:
         self.x_coordinate = new_x_coordinate
         self.y_coordinate = new_y_coordinate
     
-    def collision_detection(other_thing):
+    def collision_detection(self,other_thing):
         pass
 
 def new_aliens_collection(positions):
