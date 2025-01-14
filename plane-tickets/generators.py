@@ -37,7 +37,7 @@ def generate_seats(number):
 
     index = 0
     while index < number:
-        if(index == 13):
+        if(1+(index//4) == 13):
             index+=1
         else:
             yield f"{1+(index//4)}{SEAT_NAME[index%4]}"
