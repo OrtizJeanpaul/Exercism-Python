@@ -72,7 +72,4 @@ def generate_codes(seat_numbers, flight_id):
     """
 
     for seat in seat_numbers:
-        if(len(seat+flight_id) >8):
-            yield seat+flight_id+'000'
-        else:
-            yield seat+flight_id+'0000'
+        yield (seat + flight_id).ljust(12, '0')
