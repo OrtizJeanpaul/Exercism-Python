@@ -55,10 +55,12 @@ def assign_seats(passengers):
     Example output: {"Adele": "1A", "Björk": "1B"}
 
     """
-
-    for _,passenger in enumerate(passengers):
-        temp = yield from assign_seats(len(passengers))
-        yield {passenger: temp}
+    
+    seat_generator = generate_seats(len(passengers))
+    assigned_seats = {}
+    for passenger in passengers:
+        assigned_seats[passenger] = next(seat_generator)
+    return assigned_seats
 
 def generate_codes(seat_numbers, flight_id):
     """Generate codes for a ticket.
