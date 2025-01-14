@@ -1,6 +1,6 @@
 """Functions to automate Conda airlines ticketing system."""
 
-
+SEAT_NAME = ['A','B','C','D']
 def generate_seat_letters(number):
     """Generate a series of letters for airline seats.
 
@@ -13,9 +13,9 @@ def generate_seat_letters(number):
     Example: A, B, C, D
 
     """
-    seat_name = ['A','B','C','D']
+   
     for index in range(number):
-        yield seat_name[index%4]
+        yield SEAT_NAME[index%4]
 
 
 def generate_seats(number):
@@ -41,7 +41,7 @@ def generate_seats(number):
             index+=1
         else:
             for i in range(1,5):
-                yield (index + generate_seat_letters(i))
+                yield index + SEAT_NAME[i]
         index+=1
 
 def assign_seats(passengers):
