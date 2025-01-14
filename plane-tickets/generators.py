@@ -40,8 +40,7 @@ def generate_seats(number):
         if(index == 13):
             index+=1
         else:
-            for i in range(4):
-                yield f"{index}{SEAT_NAME[i]}"
+            yield f"{index}{SEAT_NAME[index%4]}"
         index+=1
 
 def assign_seats(passengers):
