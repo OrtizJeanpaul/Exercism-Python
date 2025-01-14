@@ -36,7 +36,7 @@ def generate_seats(number):
     """
 
     index = 1
-    while index <= number:
+    while index < number:
         if(index == 13):
             index+=1
         else:
