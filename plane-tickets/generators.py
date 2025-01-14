@@ -71,4 +71,5 @@ def generate_codes(seat_numbers, flight_id):
 
     """
 
-    pass
+    for seat in seat_numbers:
+        yield seat+flight_id+'0000'
