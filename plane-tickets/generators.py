@@ -15,7 +15,7 @@ def generate_seat_letters(number):
     """
     seat_name = ['A','B','C','D']
     for index in range(number):
-        yield list(seat_name[index%4])
+        yield seat_name[index%4]
 
 
 def generate_seats(number):
