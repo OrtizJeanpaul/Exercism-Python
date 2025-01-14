@@ -35,7 +35,14 @@ def generate_seats(number):
 
     """
 
-    pass
+    index = 1
+    while index < number:
+        if(index == 13):
+            index+=1
+        else:
+            for i in range(1,5):
+                yield index + generate_seat_letters(i)
+        index+=1
 
 def assign_seats(passengers):
     """Assign seats to passengers.
