@@ -37,12 +37,12 @@ def generate_seats(number):
 
     index = 0
     while index < number:
-        if((1+(index//4)) == 13):
-            index+=1
-            number+=1
-        else:
-            yield f"{1+(index//4)}{SEAT_NAME[index%4]}"
-        index+=1
+        row = 1 + (index // 4)
+        if row == 13:
+            index += 4
+            continue
+        yield f"{row}{SEAT_NAME[index % 4]}"
+        index += 1
 
 def assign_seats(passengers):
     """Assign seats to passengers.
