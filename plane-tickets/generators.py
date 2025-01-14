@@ -13,8 +13,9 @@ def generate_seat_letters(number):
     Example: A, B, C, D
 
     """
-
-    pass
+    seat_name = ['A','B','C','D']
+    for index in range(len(number)):
+        yield seat_name[index%4]
 
 
 def generate_seats(number):
