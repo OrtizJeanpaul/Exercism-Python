@@ -9,13 +9,10 @@ def equilateral(sides):
 
 
 def isosceles(sides):
-    a,b,c = sides
-    return len(set(a,b,c)) < 3 and is_valid_triangle(sides)
+    return len(set(sides)) < 3 and is_valid_triangle(sides)
 
 
 def scalene(sides):
-    a,b,c = sides
-
-    return len(set(a,b,c)) == 3 and is_valid_triangle(sides)
+    return len(set(sides)) == 3 and is_valid_triangle(sides)
 
 
