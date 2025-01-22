@@ -8,5 +8,5 @@ def is_armstrong_number(number):
     while num > 0:
         digits.append(num%10)
         num //= 10
-
-    return sum((digits**len(digits))) == number
+    result = [x ** len(digits) for x in digits]
+    return sum(result) == number
