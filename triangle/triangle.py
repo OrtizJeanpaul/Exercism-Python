@@ -1,6 +1,6 @@
 def is_valid_triangle(sides):
     a,b,c = sides
-    return a+b+c >=3 and (a+b >=c and b+c >=a and a+c >=b)
+    return 0 not in sides and (a+b >=c and b+c >=a and a+c >=b)
 
 def equilateral(sides):
     a,b,c = sides
