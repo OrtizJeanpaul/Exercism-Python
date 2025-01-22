@@ -4,4 +4,4 @@ def square(number):
     return pow(2,number-1)
 
 def total():
-    return pow(2,64)
+    return pow(2,64) - 1
