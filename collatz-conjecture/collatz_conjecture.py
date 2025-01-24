@@ -1,2 +1,8 @@
 def steps(number):
-    pass
+    if number < 1:
+        raise ValueError("Only positive integers are allowed")
+    if number == 1:
+        return 0
+    if number%2 == 0:
+        return 1 + steps(number//2)
+    return 1 + number(number*3 + 1)
