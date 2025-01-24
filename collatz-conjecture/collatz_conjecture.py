@@ -5,4 +5,4 @@ def steps(number):
         return 0
     if number%2 == 0:
         return 1 + steps(number//2)
-    return 1 + number(number*3 + 1)
+    return 1 + steps(number*3 + 1)
