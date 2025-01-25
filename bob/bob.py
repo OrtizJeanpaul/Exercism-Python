@@ -1,5 +1,5 @@
 def response(hey_bob):
-    if hey_bob.replace(" ", "") == '':
+    if hey_bob.isspace():
         return "Fine. Be that way!"
 
     if hey_bob[-1] == '?':
