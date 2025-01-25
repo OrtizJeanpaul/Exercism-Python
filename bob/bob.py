@@ -1,6 +1,5 @@
 def response(hey_bob):
-    hey_bop_copy = hey_bob
-    if hey_bop_copy.replace(" ", "") == "":
+    if hey_bob.replace(" ", "") == '':
         return "Fine. Be that way!"
 
     if hey_bob[-1] == '?':
