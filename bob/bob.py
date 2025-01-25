@@ -1,5 +1,5 @@
 def response(hey_bob):
-    if hey_bob.isspace():
+    if hey_bob.isspace() or hey_bob == "":
         return "Fine. Be that way!"
 
     if hey_bob[-1] == '?':
