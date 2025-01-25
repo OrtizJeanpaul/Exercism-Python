@@ -1,5 +1,5 @@
 def response(hey_bob):
-    if hey_bob == "":
+    if hey_bob.replace(" ", "").isEmpty():
         return "Fine. Be that way!"
 
     if hey_bob[-1] == '?':
