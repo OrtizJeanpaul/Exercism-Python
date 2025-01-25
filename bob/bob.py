@@ -17,5 +17,5 @@ def response(hey_bob):
         return "Sure."
     if(is_upper):
         return "Whoa, chill out!"
-        
-    return "Whatever"
+
+    return "Whatever."
