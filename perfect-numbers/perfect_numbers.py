@@ -14,14 +14,14 @@ def classify(number):
     factor_sum = sum(factors(number))
 
     if factor_sum == number:
-        return "Perfect"
+        return "perfect"
 
-    return "Abundant" if number > factor_sum else "Deficient"
+    return "abundant" if number > factor_sum else "deficient"
 
 def factors(number):
     half = number // 2
     factor_list = []
-    for index in range(1,half):
+    for index in range(1,half+1):
         if number % index:
             factor_list.append(index)
     
