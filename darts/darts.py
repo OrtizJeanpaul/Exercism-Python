@@ -1,11 +1,15 @@
+import math
 def score(x, y):
-    if 0 <= x <=1  and 0 <= y <= 1:
-        return 10
+    hypo = math.hypot(x,y)
+
+    if 0 <= hypo <=1:
+        return 10  
     
-    if 0 <= x <= 5 and 2 <= y <= 5:
+    if  hypo <= 5:
         return 5
     
-    if 0 <= x <= 10 and 0 <= y <= 10:
+    if  x <= 10:
         return 1
 
-    return 
+    return 0
+
