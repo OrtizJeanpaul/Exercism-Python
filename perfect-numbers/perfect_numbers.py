@@ -21,7 +21,7 @@ def classify(number):
 def factors(number):
     half = number // 2
     factor_list = []
-    for index in range(half):
+    for index in range(1,half):
         if number % index:
             factor_list.append(index)
     
