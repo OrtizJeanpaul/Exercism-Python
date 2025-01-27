@@ -8,7 +8,7 @@ def score(x, y):
     if  hypo <= 5:
         return 5
     
-    if  x <= 10:
+    if  hypo <= 10:
         return 1
 
     return 0
