@@ -1,0 +1,9 @@
+def reverse(text):
+    char_list = list(text)
+    reversed_word = ""
+    index = len(char_list)
+    while index >= 0:
+        reversed_word += char_list[index]
+        index-=1
+
+    return reversed_word
