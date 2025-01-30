@@ -3,7 +3,7 @@ def is_pangram(sentence):
     letter_set = set()
     for letter in sentence:
         if letter.isalpha():
-            letter_set += letter
+            letter_set.add(letter)
     return len(letter_set) == 26
     
     
