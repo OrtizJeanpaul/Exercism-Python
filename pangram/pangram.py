@@ -1,5 +1,5 @@
 def is_pangram(sentence):
-    sentence.lower().replace(' ','')
+    sentence.tolower().replace(' ','')
     letter_set = set()
     for letter in sentence:
         if letter.isalpha():
