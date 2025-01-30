@@ -1,9 +1,9 @@
 def is_pangram(sentence):
     sentence.lower().replace(' ','')
     letter_set = set()
-    for _,letter in sentence:
-        if letter.isAlpha():
-            letter_set += letter
+    for index in sentence:
+        if sentence[index].isAlpha():
+            letter_set += sentence[index]
     return len(letter_set) == 26
     
     
