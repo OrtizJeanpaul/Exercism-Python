@@ -6,8 +6,11 @@ def is_valid(isbn):
     while index <10:
         temp = isbn[index]
         if(allowed_chars.find(temp) != -1):
-            if(temp.lower() == "x" and index == 9):
-                temp = 10
+            if(temp.lower() == "x"):
+                if(index == 9):
+                    temp = 10
+                else:
+                    return False
             total += (int(temp) * (10 - index))
             index+=1
         else:
