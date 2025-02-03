@@ -8,4 +8,5 @@ def is_valid(isbn):
         if(temp == "x"):
             temp = 10
         total += (int(temp) * (10 - index))
+        index+=1
     return total % 11 == 0
