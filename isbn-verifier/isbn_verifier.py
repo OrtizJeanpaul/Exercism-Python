@@ -1,7 +1,7 @@
 def is_valid(isbn):
 
     isbn = isbn.replace("-","")
-    if(10 < len(isbn) < 10):
+    if len(isbn) != 10:
         return False
     
     index = 0
