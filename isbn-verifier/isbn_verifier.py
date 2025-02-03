@@ -5,7 +5,7 @@ def is_valid(isbn):
     total = 0
     while index <10:
         temp = isbn[index]
-        if(temp == "x"):
+        if(temp.lower() == "x"):
             temp = 10
         total += (int(temp) * (10 - index))
         index+=1
