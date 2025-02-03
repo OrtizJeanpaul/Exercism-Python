@@ -1,2 +1,5 @@
 def is_isogram(string):
-    return
+    just_letter_string = string.replace(" ", "").replace("-","")
+    word_set = set(just_letter_string)
+
+    return len(word_set) == len(just_letter_string)
