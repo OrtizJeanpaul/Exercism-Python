@@ -1,7 +1,9 @@
 def is_valid(isbn):
+
+    isbn = isbn.replace("-","")
     if(len(isbn) < 10):
         return False
-    isbn = isbn.replace("-","")
+    
     index = 0
     total = 0
     allowed_chars = "0123456789xX"
