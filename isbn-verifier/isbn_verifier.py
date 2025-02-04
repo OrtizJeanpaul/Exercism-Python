@@ -7,7 +7,7 @@ def is_valid(isbn):
     index = 0
     total = 0
     allowed_chars = "0123456789xX"
-    while index <10:
+    while index < 10:
         temp = isbn[index]
         if(allowed_chars.find(temp) != -1):
             if(temp.lower() == "x"):
