@@ -19,4 +19,5 @@ def rotate(text, key):
                 result += cypher_value.upper()
         else:
             result += char
+            
     return result
