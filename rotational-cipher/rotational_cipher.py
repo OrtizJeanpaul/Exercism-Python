@@ -5,7 +5,7 @@ def rotate(text, key):
     mapped_chars = dict()
     
 
-    for index in len(char_list):
+    for index in range(len(char_list)):
         temp = char_list[index]
         mapped_chars[temp] = char_list[(key + index)%26]
     
