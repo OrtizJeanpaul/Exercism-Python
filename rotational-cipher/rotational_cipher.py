@@ -10,7 +10,7 @@ def rotate(text, key):
         mapped_chars[temp] = char_list[(key + index)%26]
     
     result = ""
-    for char in enumerate(text):
+    for _,char in enumerate(text):
         if char == " ":
             result += " "
         if mapped_chars.__contains__(char.lower()):
