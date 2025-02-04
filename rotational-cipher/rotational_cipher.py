@@ -11,13 +11,12 @@ def rotate(text, key):
     
     result = ""
     for _,char in enumerate(text):
-        if char == " ":
-            result += " "
         if mapped_chars.__contains__(char.lower()):
             cypher_value = mapped_chars.get(char.lower())
             if char.islower():
                 result += cypher_value
             else:
                 result += cypher_value.upper()
-    
+        else:
+            result += char
     return result
