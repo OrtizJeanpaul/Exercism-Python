@@ -1,7 +1,7 @@
 from string import ascii_lowercase
 
 def rotate(text, key):
-    char_list = ascii_lowercase()
+    char_list = ascii_lowercase
     rotation_value = int(key.replace("ROT",""))
     mapped_chars = dict()
     
