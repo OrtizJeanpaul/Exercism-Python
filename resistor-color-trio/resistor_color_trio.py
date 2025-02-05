@@ -8,5 +8,16 @@ def label(colors):
         res += str(COLOR_ARRAY.index(colors[index]))
 
     res = int(res) * num_of_zeros
+    prefix = " "
 
-    return str(int(res)) + " ohms"
+
+    if res % 1000000000 > 0:
+        res = res / 1000000000
+        prefix = " giga"
+    elif res % 1000000 > 0:
+        res = res / 1000000
+        prefix = " mega"
+    elif res % 1000 > 0:
+        res = res / 1000
+        prefix = " kilo"
+    return str(int(res)) + prefix + "ohms"
