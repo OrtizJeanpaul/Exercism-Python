@@ -9,4 +9,4 @@ def label(colors):
 
     res = int(res) * num_of_zeros
 
-    return str(res) + " ohms"
+    return str(int(res)) + " ohms"
