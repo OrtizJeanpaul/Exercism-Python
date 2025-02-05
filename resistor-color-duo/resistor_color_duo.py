@@ -3,6 +3,6 @@ def value(colors):
 
     res = ""
     for index in range(2):
-        res += COLOR_ARRAY[index]
+        res += COLOR_ARRAY.index(colors[index])
     
     return int(res)
