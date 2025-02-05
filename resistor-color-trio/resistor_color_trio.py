@@ -11,13 +11,13 @@ def label(colors):
     prefix = " "
 
 
-    if res % 1000000000 > 0:
+    if res % 1000000000 >= 1:
         res = res / 1000000000
         prefix = " giga"
-    elif res % 1000000 > 0:
+    elif res % 1000000 >= 1:
         res = res / 1000000
         prefix = " mega"
-    elif res % 1000 > 0:
+    elif res % 1000 >= 1:
         res = res / 1000
         prefix = " kilo"
     return str(int(res)) + prefix + "ohms"
