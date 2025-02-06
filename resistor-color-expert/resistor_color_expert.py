@@ -10,7 +10,7 @@ def resistor_label(colors):
 
     res = 10*COLOR_ARRAY.index(colors[0]) + COLOR_ARRAY.index(colors[1])
     num_of_zeros = 10**COLOR_ARRAY.index(colors[2])
-    tolerance = f"± {TOLERANCE_DICT[colors[3]]}"
+    tolerance = f"±{TOLERANCE_DICT[colors[3]]}"
 
     res = res * num_of_zeros
     prefix = " "
@@ -25,4 +25,4 @@ def resistor_label(colors):
         res = res / 1000
         prefix = " kilo"
 
-    return str(int(res)) + prefix + "ohms" + tolerance
+    return str(int(res)) + prefix + "ohms " + tolerance
