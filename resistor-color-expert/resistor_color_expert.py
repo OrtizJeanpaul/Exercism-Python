@@ -1,8 +1,8 @@
 def resistor_label(colors):
-    TOLERANCE_DICT =  {"Grey" : "0.05%", "Violet" : "0.1%",
-                       "Blue" : "0.25%","Green" : "0.5%",
-                       "Brown" : "1%","Red" : "2%",
-                       "Gold" : "5%","Silver" : "10%"}
+    TOLERANCE_DICT =  {"grey" : "0.05%", "violet" : "0.1%",
+                       "blue" : "0.25%","green" : "0.5%",
+                       "brown" : "1%","red" : "2%",
+                       "gold" : "5%","silver" : "10%"}
     
     COLOR_ARRAY = ["black", "brown", "red", 
                    "orange", "yellow", "green", 
