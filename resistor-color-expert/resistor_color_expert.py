@@ -1,4 +1,4 @@
-import math
+
 def resistor_label(colors):
     TOLERANCE_DICT =  {"grey" : "0.05%", "violet" : "0.1%",
                        "blue" : "0.25%","green" : "0.5%",
@@ -9,6 +9,8 @@ def resistor_label(colors):
                    "orange", "yellow", "green", 
                    "blue","violet", "grey","white"]
     res = ""
+    if len(colors) < 3:
+        return "0 ohms"
     for index in range(len(colors) - 2):
         res += str(COLOR_ARRAY.index(colors[index]))
         
@@ -20,13 +22,13 @@ def resistor_label(colors):
     prefix = " "
 
     if res % 1000000000 != res:
-        res = res / 1000000000
+        res = res // 1000000000
         prefix = " giga"
     elif res % 1000000 != res:
-        res = res / 1000000
+        res = res // 1000000
         prefix = " mega"
     elif res % 1000 != res:
-        res = res / 1000
+        res = res // 1000
         prefix = " kilo"
 
-    return str(math.floor(res)) + prefix + "ohms " + tolerance
+    return str(int(res)) + prefix + "ohms " + tolerance
