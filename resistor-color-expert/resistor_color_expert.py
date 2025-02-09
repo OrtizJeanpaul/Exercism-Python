@@ -1,3 +1,4 @@
+import math
 def resistor_label(colors):
     TOLERANCE_DICT =  {"grey" : "0.05%", "violet" : "0.1%",
                        "blue" : "0.25%","green" : "0.5%",
@@ -28,4 +29,4 @@ def resistor_label(colors):
         res = res / 1000
         prefix = " kilo"
 
-    return str(int(int(res))) + prefix + "ohms " + tolerance
+    return str(int(math.floor(res))) + prefix + "ohms " + tolerance
