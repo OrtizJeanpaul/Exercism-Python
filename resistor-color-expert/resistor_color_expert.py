@@ -8,9 +8,12 @@ def resistor_label(colors):
                    "orange", "yellow", "green", 
                    "blue","violet", "grey","white"]
 
-    res = 10*COLOR_ARRAY.index(colors[0]) + COLOR_ARRAY.index(colors[1])
-    num_of_zeros = 10**COLOR_ARRAY.index(colors[2])
-    tolerance = f"±{TOLERANCE_DICT[colors[3]]}"
+    for index in range(len(colors) - 2):
+        res += str(COLOR_ARRAY.index(colors[index]))
+        
+    res = int(res)
+    num_of_zeros = 10**COLOR_ARRAY.index(colors[-2])
+    tolerance = f"±{TOLERANCE_DICT[colors[-1]]}"
 
     res = res * num_of_zeros
     prefix = " "
