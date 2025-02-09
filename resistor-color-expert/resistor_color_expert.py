@@ -7,7 +7,7 @@ def resistor_label(colors):
     COLOR_ARRAY = ["black", "brown", "red", 
                    "orange", "yellow", "green", 
                    "blue","violet", "grey","white"]
-
+    res = ""
     for index in range(len(colors) - 2):
         res += str(COLOR_ARRAY.index(colors[index]))
         
