@@ -3,7 +3,7 @@ def find_anagrams(word, candidates):
     anagrams = []
     for index in range(len(candidates)):
         temp = "".join(sorted(candidates[index].lower()))
-        if temp == sorted_word and not candidates[index] == word:
+        if temp == sorted_word and not candidates[index].lower() == word.lower():
             anagrams.append(candidates[index])
     
     return anagrams
