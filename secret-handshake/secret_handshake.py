@@ -11,3 +11,5 @@ def commands(binary_str):
                 should_reverse = False
             else:
                 handshake.append(ACTIONS[index])
+    
+    return handshake.reverse() if should_reverse == True else handshake
