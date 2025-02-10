@@ -5,7 +5,7 @@ def commands(binary_str):
     should_reverse = True
     handshake = []
     for index in range(len(binary_list)):
-        if binary_list[index] == 1:
+        if binary_list[index] == '1':
             temp = ACTIONS[index]
             if(temp == "Reverse"):
                 should_reverse = False
