@@ -22,13 +22,13 @@ def resistor_label(colors):
     prefix = " "
 
     if res % 1000000000 != res:
-        res = res / 1000000000
+        res = f"{res / 1000000000:g}"
         prefix = " giga"
     elif res % 1000000 != res:
-        res = res / 1000000
+        res = f"{res / 1000000:g}"
         prefix = " mega"
     elif res % 1000 != res:
-        res = res / 1000
+        res = f"{res / 1000:g}"
         prefix = " kilo"
 
-    return "{}".format(res) + prefix + "ohms " + tolerance
+    return res + prefix + "ohms " + tolerance
