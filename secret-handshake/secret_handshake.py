@@ -3,7 +3,7 @@ def commands(binary_str):
 
     binary_list = list(binary_str)
     should_reverse = True
-    handshake = list()
+    handshake = []
     for index in range(len(binary_list)):
         if binary_list[index] == 1:
             temp = ACTIONS[index]
