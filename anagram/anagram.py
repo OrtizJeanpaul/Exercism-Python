@@ -1,10 +1,10 @@
 def find_anagrams(word, candidates):
     sorted_word = "".join(sorted(word.lower))
     anagrams = []
-    for _, cand in enumerate(candidates):
-        temp = "".join(sorted(cand.lower))
-        if temp == sorted_word and not cand == word:
-            anagrams.append(cand)
+    for index in range(len(candidates)):
+        temp = "".join(sorted(candidates[index].lower))
+        if temp == sorted_word and not candidates[index] == word:
+            anagrams.append(candidates[index])
     
     return anagrams
 
