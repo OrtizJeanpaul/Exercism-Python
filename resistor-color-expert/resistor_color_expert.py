@@ -31,4 +31,4 @@ def resistor_label(colors):
         res = f"{res / 1000:g}"
         prefix = " kilo"
 
-    return res + prefix + "ohms " + tolerance
+    return str(res) + prefix + "ohms " + tolerance
