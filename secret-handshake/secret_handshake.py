@@ -10,7 +10,7 @@ def commands(binary_str):
             if(temp == "Reverse"):
                 should_reverse = False
             else:
-                handshake.__add__(temp)
+                handshake.append(temp)
     
     if should_reverse:
         handshake.reverse()
