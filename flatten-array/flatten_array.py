@@ -6,7 +6,7 @@ def flatten(iterable):
     for index in range(len(iterable)):
         temp = iterable[index]
         if isinstance(temp, iter) == True:
-            result.extend(temp)
+            result.extend(flatten(temp))
         else:
             if temp is not None:
                 result.append(temp)
