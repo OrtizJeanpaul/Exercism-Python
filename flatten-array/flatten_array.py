@@ -2,8 +2,9 @@ from collections.abc import Iterable as iter
 
 def flatten(iterable):
     result = []
-    temp = iterable[index]
+    
     for index in range(len(iterable)):
+        temp = iterable[index]
         if isinstance(temp, iter) == True:
             result.extend(temp)
         else:
