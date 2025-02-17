@@ -1,7 +1,4 @@
 def append(list1, list2):
-    if not list1 or not list2:
-        return list2 if not list1 else list1
-
     return list1 + list2
 
 def concat(lists):
