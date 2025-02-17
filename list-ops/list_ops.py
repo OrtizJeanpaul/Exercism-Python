@@ -8,10 +8,10 @@ def concat(lists):
 
     return result
 
-def filter(function, list1):
+def filter(function, list):
     result = []
 
-    for item in list1:
+    for item in list:
         if function(item):
             append(item)
 
