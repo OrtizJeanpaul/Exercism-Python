@@ -2,8 +2,8 @@ def append(list1, list2):
     if not list1 or not list2:
         return list2 if not list1 else list1
         
-    for item in enumerate(list2):
-        list1.__add__(item[1])
+    for _,item in list2:
+        list1.__add__(item)
 
     return list1
 
