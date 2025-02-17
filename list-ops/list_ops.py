@@ -8,8 +8,14 @@ def concat(lists):
 
     return result
 
-def filter(function, list):
-    return
+def filter(function, list1):
+    result = []
+
+    for item in list1:
+        if function(item):
+            append(item)
+
+    return result
 
 def length(list):
     i = 0
