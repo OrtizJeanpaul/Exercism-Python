@@ -3,8 +3,8 @@ def append(list1, list2):
 
 def concat(lists):
     result = []
-    for _,item in lists:
-        result.extend(item)
+    for index in lists:
+        result.extend(lists[index])
 
     return result
 
