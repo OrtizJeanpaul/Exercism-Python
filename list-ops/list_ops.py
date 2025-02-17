@@ -3,7 +3,7 @@ def append(list1, list2):
         return list2 if not list1 else list1
         
     for item in enumerate(list2):
-        list1.__add__(item)
+        list1.__add__(item[1])
 
     return list1
 
