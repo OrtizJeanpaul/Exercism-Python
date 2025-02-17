@@ -4,7 +4,7 @@ def append(list1, list2):
 def concat(lists):
     result = []
     for index in lists:
-        result.extend(lists[index])
+        result.extend(index)
 
     return result
 
